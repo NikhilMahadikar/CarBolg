@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: linear-gradient(75deg,rgb(193, 0, 97),purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#OuterCont{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 80vw;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    background-image: linear-gradient(75deg,rgb(111, 0, 46),royalblue);
+}
+#innerCont{
+    width: 50%;
+    height: 60%;
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+#heading{
+    color: white;
+    position: absolute;
+    top: 10px;
+    font-size: 40px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.inputdiv{
+    width: 65%;
+    height: 30px;
+    border: 4px solid royalblue;
+    margin-top: 20px;
+    border-radius: 200px;
+    position: relative;
+    left: 7vw;
+}
+.inputtags{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+#passvis{
+    width: 25px;
+    border-radius: 100%;
+    border: 2px solid royalblue;
+    position: absolute;
+    top: 1px;
+    right: 2px;
+}
+#passdiv{
+    position: relative;
+}
+#loginButton{
+    background-color: transparent;
+    border: 3px solid lawngreen;
+    position: absolute;
+    bottom: 5px;
+    left: 30%;
+    width: 150px;
+    height: 30px;
+    border-radius: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    color: pink;
+}
+#status{
+    color: red;
+    font-size: 21px;
+    text-align: center;
+}

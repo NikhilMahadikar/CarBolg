@@ -1,0 +1,157 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#headerVid{
+    width: 100%;
+    filter: brightness(20%);
+    position: absolute;
+    top: 0px;
+    left:0px;
+   
+}
+#headerArrow,#secArrow1,#secArrow2{
+    width: 80px;
+    position: absolute;
+    bottom: 20px;
+    transition: all 0.2s;
+    z-index: 3;
+    right:45%;
+}
+#headerArrow:hover,#secArrow1:hover,#secArrow2:hover{
+    transform: translateY(20px);
+}
+
+#heading1,#heading2{
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 50px;
+    word-spacing: 20px;
+    text-shadow: 5px 5px 5px black;
+    font-family: 'Poltawski Nowy', serif;
+}
+#heading2{
+    position: relative;
+    top: 60px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    text-shadow: 5px 5px 5px black;
+    font-family: 'Poltawski Nowy', serif;
+    transform: translateY(220px);
+    filter: opacity(0);
+}
+#carAni{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    z-index: 3;
+    transform: translateX(-950px);
+}
+#carimg{
+    position: absolute;
+    height: 60px;
+    z-index: 3;
+   right: 0px;
+}
+#sec1,#sec2{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#sec2{
+    background-color: white;
+}
+#secArrow1,#secArrow2{
+    width: 50px;
+}
+.cars{
+    background-image: url(../Asset/Images/car1.jpg);
+    background-size: 120% 100%;
+    background-position: center;
+    height: 80vh;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    clip-path: polygon(34% 0, 100% 0%, 100% 100%, 0% 100%);
+    transition:  background-size 0.2s,background-position 0.2s;
+}
+.cars:hover{
+    background-size: 160% 140%;
+}
+.carPara{
+    color: white;
+    width: 50%;
+    padding: 0px 20px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-indent: 20px;
+    text-align: justify;
+}
+.carsName{
+    color: lawngreen;
+    font-size: 60px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    font-family: 'Poltawski Nowy', serif;
+}
+#car2Name{
+    color: purple;
+}
+#car2Para{
+    color: black;
+}
+#car2{
+    background-image: url(../Asset/Images/car2.jpg);
+    background-position: 60px 0px;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+
+}
+.logo{
+    padding-left: 20px;
+    width: 20px;
+    transition: transform 0.2s;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+#logout{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: white;
+    z-index: 3;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+#logout:hover{
+    transform: scale(1.2);
+}

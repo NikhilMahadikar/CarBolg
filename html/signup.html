@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Blog-Signup</title>
+      <link rel="stylesheet" href="../css/signup.css">
+      <script src="../js/signup.js" defer></script>
+</head>
+<body>
+    <H1>Signup</H1>
+    <div id="container">
+        <form action="../index.html" >
+        <section id="1stLayer">
+            <input required class="inp" type="text" placeholder="First Name">
+            <input required class="inp" type="text" placeholder="Sur Name"><br>
+        </section>
+            <input required class="inp" id="Mob" placeholder="Mobile Number or Email address"><br>
+            <input required class="inp" type="password" id="Pass" placeholder="New Password">
+            <br>
+
+            <label id="doblab">Date of Birth</label>
+            <br><br>
+            <section id="selop">
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+            </select>
+            <select>
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+                <option>Apl</option>
+                <option>May</option>
+                <option>Jun</option>
+                <option>Jul</option>
+                <option>Aug</option>
+                <option>Sep</option>
+                <option>Oct</option>
+                <option>Nov</option>
+                <option>Dec</option>
+            </select>
+            <select>
+                <option>2024</option>
+                <option>2023</option>
+                <option>2022</option>
+                <option>2021</option>
+                <option>2020</option>
+                <option>2019</option>
+            </select>
+        </section>
+            <br>
+            <label id="gen">Gender</label>
+            <section id="gensec">
+            <div class="genderCont">
+                <Label>Male</Label>
+                <input type="radio" name="Gender" value="male" onclick="gender(this.value)">
+            </div>
+            <div class="genderCont">
+                <Label>Female</Label>
+                <input type="radio" name="Gender" value="female" onclick="gender(this.value)">
+            </div>
+            <div class="genderCont">
+                <Label>Others</Label>
+                <input type="radio" name="Gender" value="others" onclick="gender(this.value)">
+            </div>
+        </section>
+            <p id="info">People who use our service may have uploaded your contact information to Facebook. Learn more.
+
+                By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+           
+</html> <input type="submit" id="signup" value="Signup" onclick="storeTheUserInfo()">
+            </form>
+    </div>
+
+   <a href="../index.html"> <button id="loginBut">Login</button></a>
+</body>
